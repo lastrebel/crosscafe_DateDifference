@@ -12,6 +12,18 @@ document.getElementById("txt_result").innerHTML='Enter both dates for calculatio
 btn_calculate_result.addEventListener('click', calculateClick);
 
 
+// MyDate class
+/// Year - 
+function MyDate(year, month, day) {
+    this.Year = year;
+    this.Month = month;
+    this.Day = day;
+}
+
+MyDate.prototype.getDaysFromBase = function () {
+
+}
+
 
 
 //var start_date = 'bchg';
@@ -64,6 +76,9 @@ function verifyDates(date) {
         }
     return false;
 }
+
+
+function getDays ()
 /*
 Start datum bude mat id "frm_start_date",
 End datum ma id "frm_end_date",
